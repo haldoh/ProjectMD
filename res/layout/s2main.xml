@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	    <TextView  
+	    android:id="@+id/userLabel"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:textSize="14sp"
+	    android:text="Utente connesso: "
+	    />
+	    <TextView  
+	    android:id="@+id/userName"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:textSize="14sp"
+	    />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	    <Button
+			android:id="@+id/cerca"
+			android:text="Cerca POI"
+			android:textSize="12sp" 
+		 	android:layout_width="fill_parent" 
+		 	android:layout_height="fill_parent"
+		 	android:layout_weight="1"
+		 	/>
+		 <Button
+			android:id="@+id/aggiungi"
+			android:text="Aggiungi nuovo POI"
+			android:textSize="12sp" 
+		 	android:layout_width="fill_parent" 
+		 	android:layout_height="fill_parent"
+		 	android:layout_weight="1"
+		 	/>
+	</LinearLayout>
+	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<Button
+		android:id="@+id/scarica"
+		android:text="Scarica POI da server"
+		android:textSize="12sp" 
+	 	android:layout_width="fill_parent" 
+	 	android:layout_height="fill_parent"
+		android:layout_weight="1"
+	 	/>
+	<Button
+		android:id="@+id/elimina"
+		android:text="Elimina POI personali"
+		android:textSize="12sp" 
+	 	android:layout_width="fill_parent" 
+	 	android:layout_height="fill_parent"
+	 	android:layout_weight="1"
+	 	/>
+	<Button
+		android:id="@+id/eliminaserver"
+		android:text="Elimina POI da server"
+		android:textSize="12sp" 
+	 	android:layout_width="fill_parent" 
+	 	android:layout_height="fill_parent"
+	 	android:layout_weight="1"
+	 	/>
+	</LinearLayout>
+	<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >    
+	    <TextView
+	    android:id="@+id/ranLabel"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_below="@+id/button3"
+	    android:text="Selezionare raggio di ricerca"
+	    />
+	    <Spinner
+	    android:id="@+id/range"
+	    android:layout_width="fill_parent"  
+	    android:layout_height="55sp"
+	    android:layout_below="@+id/ranLabel"
+	    android:textSize="5sp"
+	    />
+	    <TextView
+	    android:id="@+id/catLabel"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_below="@+id/range"
+	    android:text="Selezionare categorie di ricerca"
+	    />
+	    <ListView
+	    android:id="@android:id/list"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_below="@+id/catLabel"
+	    />
+	</LinearLayout>
+</LinearLayout>
